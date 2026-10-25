@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "documentId": "team-1",
+    "name": "Rabiu Sa'idu Ajiya",
+    "role": "Managing Director / CEO",
+    "note": "Leadership, vision, and the long view of urban opportunity.",
+    "verified": true,
+    "sortOrder": 1,
+    "photo": {
+      "id": 400,
+      "url": "/images/team/rabiu-saidu-ajiya.webp",
+      "alternativeText": null
+    }
+  },
+  {
+    "id": 2,
+    "documentId": "team-2",
+    "name": "Abdulaziz Pitiko",
+    "role": "Legal Advisor",
+    "note": "Guiding documentation, title, and compliance so every transaction stands on solid ground.",
+    "verified": true,
+    "sortOrder": 2,
+    "photo": {
+      "id": 401,
+      "url": "/images/team/abdulaziz-pitiko.webp",
+      "alternativeText": null
+    }
+  },
+  {
+    "id": 3,
+    "documentId": "team-3",
+    "name": "Zainab Ahmad Abba",
+    "role": "PR Department",
+    "note": "Shaping how AJIYA Urban Rise shows up and connects, from press to community.",
+    "verified": true,
+    "sortOrder": 3,
+    "photo": {
+      "id": 402,
+      "url": "/images/team/zainab-ahmad-abba.webp",
+      "alternativeText": null
+    }
+  },
+  {
+    "id": 4,
+    "documentId": "team-4",
+    "name": "Rabiu Sani Muhammad",
+    "role": "IT Department",
+    "note": "Keeping the systems behind AJIYA Urban Rise running smoothly and securely.",
+    "verified": true,
+    "sortOrder": 4,
+    "photo": {
+      "id": 403,
+      "url": "/images/team/rabiu-sani-muhammad.webp",
+      "alternativeText": null
+    }
+  },
+  {
+    "id": 5,
+    "documentId": "team-5",
+    "name": "Grace Isaac",
+    "role": "Marketing & Strategy",
+    "note": "Shaping how AJIYA Urban Rise tells its story and reaches the right people.",
+    "verified": true,
+    "sortOrder": 5,
+    "photo": {
+      "id": 404,
+      "url": "/images/team/grace-isaac.webp",
+      "alternativeText": null
+    }
+  },
+  {
+    "id": 6,
+    "documentId": "team-6",
+    "name": "Sameer Abdulrahman Babayo",
+    "role": "Admin Officer",
+    "note": "Keeping the day-to-day operations of AJIYA Urban Rise organized and on track.",
+    "verified": true,
+    "sortOrder": 6,
+    "photo": {
+      "id": 405,
+      "url": "/images/team/sameer-abdulrahman-babayo.webp",
+      "alternativeText": null
+    }
+  }
+]

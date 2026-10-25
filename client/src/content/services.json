@@ -1,0 +1,87 @@
+[
+  {
+    "sortOrder": 1,
+    "id": 1,
+    "documentId": "service-development",
+    "index": "01",
+    "title": "Real Estate Development",
+    "slug": "development",
+    "cue": "Opportunity → place",
+    "shortDescription": "From land opportunity to considered urban place, we plan, shape, and deliver developments built for lasting value.",
+    "intro": "Building places that carry opportunity forward.",
+    "body": "AJIYA looks at development as a connected journey: discovering the right opportunity, understanding the context, planning with intention, and shaping a place that can create lasting value for the people who use it.",
+    "points": [
+      "Opportunity-led site thinking",
+      "Context-aware planning",
+      "Long-term value creation"
+    ]
+  },
+  {
+    "sortOrder": 2,
+    "id": 2,
+    "documentId": "service-sales",
+    "index": "02",
+    "title": "Property Sales",
+    "slug": "sales",
+    "cue": "Find your footing",
+    "shortDescription": "Clear guidance for buyers exploring land, homes, and residential opportunities across Abuja's evolving landscape.",
+    "intro": "A clearer way to move toward the right property.",
+    "body": "Buying land or a home is a meaningful step. Our role is to make the opportunity easier to understand, from the location and development story to the practical next conversation.",
+    "points": [
+      "Land and residential guidance",
+      "Clear project context",
+      "A human route to enquiry"
+    ]
+  },
+  {
+    "sortOrder": 3,
+    "id": 3,
+    "documentId": "service-investment",
+    "index": "03",
+    "title": "Real Estate Investment",
+    "slug": "investment",
+    "cue": "Think in horizons",
+    "shortDescription": "A long-term view of property and land investment, grounded in location, potential, and the work behind value.",
+    "intro": "See beyond the transaction. Think in horizons.",
+    "body": "We believe real estate investment deserves a patient, informed view. AJIYA brings together location, development potential, and a grounded understanding of the work required to build value over time.",
+    "points": [
+      "Long-term perspective",
+      "Land and property opportunities",
+      "Conversations built on clarity"
+    ]
+  },
+  {
+    "sortOrder": 4,
+    "id": 4,
+    "documentId": "service-management",
+    "index": "04",
+    "title": "Property Management",
+    "slug": "management",
+    "cue": "Value, maintained",
+    "shortDescription": "Practical support that helps property assets remain cared for, useful, and positioned for the next chapter.",
+    "intro": "Keep the value of a place in motion.",
+    "body": "Property value is shaped by what happens after handover. Our management approach supports the care, usefulness, and continuity that help an asset serve its owners and occupants well.",
+    "points": [
+      "Asset care and coordination",
+      "Occupant-aware support",
+      "Practical continuity"
+    ]
+  },
+  {
+    "sortOrder": 5,
+    "id": 5,
+    "documentId": "service-construction",
+    "index": "05",
+    "title": "Construction",
+    "slug": "construction",
+    "cue": "Make the plan real",
+    "shortDescription": "Development expertise translated into disciplined delivery, from the first line on a plan to the built environment.",
+    "intro": "Make the plan real, with discipline.",
+    "body": "Construction is where ambition meets detail. AJIYA brings a development mindset to delivery, keeping the focus on clarity, craft, and the built outcome that people will experience every day.",
+    "points": [
+      "Delivery-minded thinking",
+      "Material and site discipline",
+      "Built-form expertise"
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "documentId": "property-land-opportunities",
+    "name": "Land opportunities",
+    "slug": "land-opportunities",
+    "category": "Land",
+    "location": "Kubwa and Abuja growth corridors",
+    "priceGuide": 5,
+    "description": "A focused conversation around land, location context, and the next step toward ownership.",
+    "features": [
+      "Land",
+      "Investment",
+      "Growth corridor"
+    ],
+    "availabilityStatus": "Available",
+    "image": null,
+    "project": null
+  },
+  {
+    "id": 2,
+    "documentId": "property-residential-opportunities",
+    "name": "Residential opportunities",
+    "slug": "residential-opportunities",
+    "category": "Residential",
+    "location": "Selected Abuja communities",
+    "priceGuide": 15,
+    "description": "Explore homes and residential communities with a clear view of the place, the people, and the possibilities.",
+    "features": [
+      "Residential",
+      "First-time buyers",
+      "Community"
+    ],
+    "availabilityStatus": "Available",
+    "image": null,
+    "project": {
+      "id": 1,
+      "documentId": "project-signature-estate",
+      "name": "AJIYA Signature Estate",
+      "slug": "signature-estate"
+    }
+  },
+  {
+    "id": 3,
+    "documentId": "property-commercial-opportunities",
+    "name": "Commercial opportunities",
+    "slug": "commercial-opportunities",
+    "category": "Commercial",
+    "location": "Strategic urban locations",
+    "priceGuide": 35,
+    "description": "Discuss property opportunities that support the way Abuja works, grows, and connects over time.",
+    "features": [
+      "Commercial",
+      "Development",
+      "Long-term value"
+    ],
+    "availabilityStatus": "Available",
+    "image": null,
+    "project": null
+  },
+  {
+    "id": 4,
+    "documentId": "property-investment-conversations",
+    "name": "Investment conversations",
+    "slug": "investment-conversations",
+    "category": "Investment",
+    "location": "Abuja, Nigeria",
+    "priceGuide": 25,
+    "description": "Start a considered conversation about property and land investment with the context in the room.",
+    "features": [
+      "Investment",
+      "Land",
+      "Long-term value"
+    ],
+    "availabilityStatus": "Available",
+    "image": null,
+    "project": null
+  }
+]

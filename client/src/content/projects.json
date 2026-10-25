@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "documentId": "project-signature-estate",
+    "name": "AJIYA Signature Estate",
+    "slug": "signature-estate",
+    "number": "01",
+    "type": "Residential",
+    "status": "Construction",
+    "location": "Kubwa, Abuja",
+    "eyebrow": "Where vision meets value",
+    "description": "A residential development story shaped around belonging, access, and the quiet confidence of a place built to last.",
+    "sortOrder": 1,
+    "seoDescription": "AJIYA Signature Estate is a residential development in Kubwa, Abuja, built for lasting value and belonging.",
+    "documentationStatus": "FCDA Approved · Right of Occupancy (RofO)",
+    "units": [
+      {
+        "type": "Semi detached",
+        "size": "250sqm",
+        "price": "₦20m"
+      }
+    ],
+    "heroImage": {
+      "id": 100,
+      "url": "/images/ajiya-signature-estate.jpg",
+      "alternativeText": null
+    },
+    "gallery": []
+  },
+  {
+    "id": 2,
+    "documentId": "project-urban-rise-estate",
+    "name": "Urban Rise Estate",
+    "slug": "urban-rise-estate",
+    "number": "02",
+    "type": "Mixed-Use",
+    "status": "Construction",
+    "location": "Kuje, Abuja",
+    "eyebrow": "A wider view of growth",
+    "description": "An emerging urban vision that connects land, infrastructure, and community into a stronger future for the city.",
+    "sortOrder": 2,
+    "seoDescription": "Urban Rise Estate is a masterplanned community in Abuja's growth corridor, connecting land, infrastructure, and community.",
+    "documentationStatus": "FCDA Approved · Right of Occupancy (RofO)",
+    "units": [
+      {
+        "type": "Semi detached",
+        "size": "300sqm",
+        "price": "₦4.5m"
+      },
+      {
+        "type": "Terrace Duplex",
+        "size": "250sqm",
+        "price": "₦3.5m"
+      },
+      {
+        "type": "Fully detached duplex",
+        "size": "600sqm",
+        "price": "₦9m"
+      },
+      {
+        "type": "Semi detached bungalow",
+        "size": "300sqm",
+        "price": "₦4.5m"
+      }
+    ],
+    "heroImage": null,
+    "gallery": []
+  },
+  {
+    "id": 3,
+    "documentId": "project-golden-valley-estate",
+    "name": "Golden Valley Estate",
+    "slug": "golden-valley-estate",
+    "number": "03",
+    "type": "Residential",
+    "status": "Construction",
+    "location": "Kurudu, Abuja",
+    "eyebrow": "A place to grow into",
+    "description": "Golden Valley Estate brings a considered mix of family homes and flats to Kurudu — from fully detached five-bedroom houses to compact two-bedroom flats, each built with the same attention to quality and documentation.",
+    "sortOrder": 3,
+    "documentationStatus": "FCDA Approved · Right of Occupancy (RofO)",
+    "units": [
+      {
+        "type": "Fully detached (5 bedrooms with BQ)",
+        "size": "500sqm",
+        "price": "₦15m"
+      },
+      {
+        "type": "Semi detached (4 bedrooms with BQ)",
+        "size": "300sqm",
+        "price": "₦12m"
+      },
+      {
+        "type": "Terraces (3 bedrooms with BQ)",
+        "size": "180sqm",
+        "price": "₦7.8m"
+      },
+      {
+        "type": "Block of Flats (2 bedrooms)",
+        "price": "₦55m"
+      },
+      {
+        "type": "Block of Flats (3 bedrooms)",
+        "price": "₦66m"
+      }
+    ],
+    "seoDescription": "Golden Valley Estate, Kurudu — fully detached, semi-detached, terrace, and flat options from AJIYA Urban Rise. FCDA approved with RofO.",
+    "heroImage": null,
+    "gallery": []
+  },
+  {
+    "id": 4,
+    "documentId": "project-khadija-residence",
+    "name": "Khadija Residence",
+    "slug": "khadija-residence",
+    "number": "04",
+    "type": "Residential",
+    "status": "Construction",
+    "location": "Lugbe, Abuja",
+    "eyebrow": "A quieter kind of arrival",
+    "description": "Khadija Residence offers terrace living and a signature penthouse option in Lugbe — close to the airport corridor, built for people who want both convenience and calm.",
+    "sortOrder": 4,
+    "documentationStatus": "FCDA Approved · Right of Occupancy (RofO)",
+    "units": [
+      {
+        "type": "Terrace",
+        "size": "250sqm",
+        "price": "₦10m"
+      },
+      {
+        "type": "Fully detached penthouse",
+        "size": "550sqm",
+        "price": "₦19m"
+      }
+    ],
+    "seoDescription": "Khadija Residence, Lugbe — terrace and penthouse living from AJIYA Urban Rise. FCDA approved with RofO.",
+    "heroImage": null,
+    "gallery": []
+  }
+]

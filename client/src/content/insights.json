@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "documentId": "insight-why-context-matters",
+    "title": "Why the strongest property decisions begin with context",
+    "slug": "why-context-matters",
+    "category": "Real Estate",
+    "excerpt": "A clear view of location, use, and the story behind a development can make a considered decision feel simpler.",
+    "body": "Real-estate decisions become more useful when they start with a better question: what is this place becoming, and how can the opportunity inside it be understood clearly? In a growing city, the visible part of property is only one layer. There is the land itself, the connections around it, the planning that gives it purpose, and the people whose lives will make it meaningful.",
+    "readTime": "4 min read",
+    "publishDate": "2026-01-15",
+    "author": "AJIYA Urban Rise",
+    "featured": true,
+    "coverImage": null
+  },
+  {
+    "id": 2,
+    "documentId": "insight-land-patience-lasting-value",
+    "title": "Land, patience, and the work behind lasting value",
+    "slug": "land-patience-lasting-value",
+    "category": "Investment",
+    "excerpt": "Property is not only about what exists today. It is also about what a place is becoming and how you participate in that change.",
+    "body": "Property is not only about what exists today. It is also about what a place is becoming and how you participate in that change. AJIYA's approach to investment starts with location context and a patient view of the horizon.",
+    "readTime": "5 min read",
+    "publishDate": "2026-01-08",
+    "author": "AJIYA Urban Rise",
+    "featured": false,
+    "coverImage": null
+  },
+  {
+    "id": 3,
+    "documentId": "insight-line-on-a-plan-to-home",
+    "title": "From a line on a plan to a place people can call home",
+    "slug": "line-on-a-plan-to-home",
+    "category": "Project Updates",
+    "excerpt": "Development is a sequence of decisions. The right ones create more than buildings; they create confidence in the future.",
+    "body": "Development is a sequence of decisions. The right ones create more than buildings; they create confidence in the future. This is the story of how AJIYA moves from opportunity to place.",
+    "readTime": "3 min read",
+    "publishDate": "2025-12-20",
+    "author": "AJIYA Urban Rise",
+    "featured": false,
+    "coverImage": null
+  },
+  {
+    "id": 4,
+    "documentId": "insight-60-seconds-with-the-ceo-getting-started",
+    "title": "60 Seconds with the CEO: Getting Started",
+    "slug": "60-seconds-with-the-ceo-getting-started",
+    "category": "60 Seconds with the CEO",
+    "excerpt": "A short, recurring video check-in with Rabiu Sa'idu Ajiya, Managing Director/CEO of AJIYA Urban Rise. First edition coming soon.",
+    "body": "“60 Seconds with the CEO” is a short, recurring video segment where Rabiu Sa'idu Ajiya, Managing Director/CEO of AJIYA Urban Rise, answers quick questions about the company, real estate in Abuja, and what's next.\n\nThe first edition is coming soon.",
+    "readTime": "1 min watch",
+    "publishDate": "2026-01-15",
+    "author": "AJIYA Urban Rise",
+    "featured": false,
+    "coverImage": null
+  }
+]
