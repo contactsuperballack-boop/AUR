@@ -91,7 +91,7 @@ export function Footer() {
   return (
     <footer className="border-t border-charcoal/10 bg-charcoal text-limestone">
       <div className="container py-16 md:py-20"><NewsletterSignup />
-        <div className="grid gap-12 lg:grid-cols-[1.2fr_0.7fr_0.7fr_1fr]">
+        <div className="grid gap-12 lg:grid-cols-[1.1fr_0.55fr_0.7fr_1.65fr]">
           <div>
             <Brand />
             <p className="mt-7 max-w-sm text-[0.94rem] leading-7 text-limestone/60">
@@ -113,9 +113,15 @@ export function Footer() {
               <a className="footer-link" href={whatsappMessage()} target="_blank" rel="noreferrer">WhatsApp</a><a className="footer-link" href={assets.instagram} target="_blank" rel="noreferrer">Instagram</a>
             </div>
           </div>
-          <div>
+          <div className="footer-visit">
             <p className="eyebrow text-limestone/40">Visit</p>
-            <p className="mt-5 max-w-[15rem] text-sm leading-6 text-limestone/65">Suite 1021, Third Floor<br />Los Angeles Mall<br />Ahmadu Bello Way<br />Mabushi, Abuja, Nigeria</p><div className="mt-4 flex flex-col gap-1 text-xs text-limestone/50">{officeHours.map((row) => <div key={row.days} className="flex justify-between gap-4"><span>{row.days}</span><span>{row.hours}</span></div>)}</div>
+            <div className="footer-visit-body">
+              <address className="footer-address">Suite 1021, Third Floor<br />Los Angeles Mall<br />Ahmadu Bello Way<br />Mabushi, Abuja, Nigeria</address>
+              <div className="footer-hours" role="group" aria-label="Office hours">
+                <p className="footer-hours-label">Office hours</p>
+                {officeHours.map((row) => <div key={row.days} className="footer-hours-row"><span>{row.days}</span><span>{row.hours}</span></div>)}
+              </div>
+            </div>
           </div>
         </div>
         <div className="mt-14 flex flex-col justify-between gap-4 border-t border-limestone/10 pt-5 text-[0.7rem] uppercase tracking-[0.14em] text-limestone/35 sm:flex-row">

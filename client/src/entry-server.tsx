@@ -1,4 +1,4 @@
-import { prerender } from "react-dom/static";
+import { prerenderToNodeStream } from "react-dom/static";
 import { Router } from "wouter";
 import App from "./App";
 import { takeHead } from "./lib/head-collector";
@@ -21,13 +21,15 @@ export interface RenderResult {
 export async function render(url: string): Promise<RenderResult> {
   takeHead(); // clear anything left over from a previous route
   const errors: unknown[] = [];
-  const { prelude } = await prerender(
+  const { prelude } = await prerenderToNodeStream(
     <Router ssrPath={url}>
       <App />
     </Router>,
     { onError: (error) => void errors.push(error) }
   );
-  const html = await new Response(prelude).text();
+  const chunks: Buffer[] = [];
+  for await (const chunk of prelude) chunks.push(Buffer.from(chunk));
+  const html = Buffer.concat(chunks).toString("utf8");
   if (errors.length > 0) {
     throw new Error(`Prerender of ${url} failed: ${String((errors[0] as Error)?.stack ?? errors[0])}`);
   }

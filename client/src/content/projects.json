@@ -63,8 +63,18 @@
         "price": "₦4.5m"
       }
     ],
-    "heroImage": null,
-    "gallery": []
+    "heroImage": {
+      "id": 101,
+      "url": "/images/ajiya-urban-rise.jpg",
+      "alternativeText": null
+    },
+    "gallery": [
+      {
+        "id": 510,
+        "url": "/images/projects/urban-rise-estate-street.webp",
+        "alternativeText": null
+      }
+    ]
   },
   {
     "id": 3,
@@ -105,7 +115,11 @@
       }
     ],
     "seoDescription": "Golden Valley Estate, Kurudu — fully detached, semi-detached, terrace, and flat options from AJIYA Urban Rise. FCDA approved with RofO.",
-    "heroImage": null,
+    "heroImage": {
+      "id": 102,
+      "url": "/images/projects/golden-valley-estate.webp",
+      "alternativeText": null
+    },
     "gallery": []
   },
   {
@@ -134,7 +148,11 @@
       }
     ],
     "seoDescription": "Khadija Residence, Lugbe — terrace and penthouse living from AJIYA Urban Rise. FCDA approved with RofO.",
-    "heroImage": null,
+    "heroImage": {
+      "id": 103,
+      "url": "/images/projects/khadija-residence.webp",
+      "alternativeText": null
+    },
     "gallery": []
   }
 ]

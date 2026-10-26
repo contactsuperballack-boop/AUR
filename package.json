@@ -8,7 +8,7 @@
     "dev:client": "vite --host",
     "dev:server": "PORT=3001 tsx watch server/index.ts",
     "content": "node scripts/build-content.mjs",
-    "build:client": "pnpm content && vite build && vite build --ssr src/entry-server.tsx --outDir ../dist/server && node scripts/prerender.mjs",
+    "build:client": "pnpm content && vite build && vite build --ssr src/entry-server.tsx --outDir ../dist/server && node scripts/prerender.mjs && node scripts/check-deploy.mjs",
     "build:server": "esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "build": "pnpm build:client && pnpm build:server",
     "start": "NODE_ENV=production node dist/index.js",
@@ -69,5 +69,8 @@
     "overrides": {
       "tailwindcss>nanoid": "3.3.7"
     }
+  },
+  "engines": {
+    "node": ">=22.12"
   }
 }

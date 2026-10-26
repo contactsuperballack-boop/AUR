@@ -22,6 +22,10 @@ export const assets = {
   urban: "/images/ajiya-urban-rise.jpg",
   opportunity: "/images/ajiya-opportunity.jpg",
   mark: "/images/ajiya-logo.webp",
+  // Home "About" mosaic: stills from AJIYA estate films (distinct from every project/property card).
+  aboutFacade: "/images/about/estate-facade.webp",
+  aboutInterior: "/images/about/estate-interior.webp",
+  aboutStreet: "/images/about/estate-street.webp",
   instagram: "https://www.instagram.com/ajiyaurbanrise/",
   brochure: "/ajiya-urban-rise-brochure.pdf",
 };

@@ -27,7 +27,7 @@ const AUTO_REVEAL = [
   ".faq-item",
   ".contact-line",
   ".insight-feature",
-  ".about-image-wrap",
+  ".about-mosaic",
   ".unit-price-table",
   ".property-search-panel",
 ].join(",");

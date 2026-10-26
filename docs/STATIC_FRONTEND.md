@@ -40,3 +40,9 @@ First step on your machine: `pnpm install && pnpm check && pnpm test && pnpm bui
 - **Booking assistant** (`components/BookingAssistant.tsx`, logic in `lib/booking.ts`, tests in `lib/__tests__/booking.test.ts`): scripted, asks only the enquiry form's questions, composes a message for WhatsApp/email. Targets live in `contact` in `data/site.ts`. It stores and sends nothing itself.
 - **Motion** (`hooks/usePageMotion.ts`): data-attribute driven (`data-parallax`, `data-parallax-in`, `data-reveal`, `data-marquee`, `data-hscroll`), reduced-motion safe, pinned horizontal scroll desktop-only.
 - Tests for the new logic ran with a minimal runner; `pnpm test` has not been run (no dependencies installed here).
+
+## Batch 3b additions
+- **Images:** every project, property and insight now has its own picture (`client/public/images/{projects,properties,insights,about}`); `data/__tests__/media.test.ts` fails if any is missing or repeated. Inner pages without a photograph use a quiet typographic hero (`PageHero` with no `image`).
+- **Land opportunities** uses a crop of open ground from the Urban Rise aerial render with a "Land for sale" sign added. Replace `images/properties/land-opportunities.webp` with a real photograph when you have one.
+- **Films:** `client/public/videos` + `data/project-media.ts`. Urban Rise Estate has three films; the Golden Valley reel is on the Golden Valley page. Hosting note: the static host must allow `media-src 'self'` in its Content-Security-Policy.
+- **Footer** Visit block now shows address and office hours side by side.

@@ -1,0 +1,10 @@
+# Files Vercel doesn't need to upload (the build only needs client/, shared/, scripts/, cms/scripts/seed-data.json).
+node_modules
+dist
+e2e
+playwright-report
+test-results
+brochure-source
+project-reference
+*.zip
+.github

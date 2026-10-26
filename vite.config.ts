@@ -3,7 +3,20 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 import { defineConfig } from "vite";
 
+// On Vercel the canonical origin is derived automatically (production domain on production
+// builds, the deployment URL on previews) unless VITE_SITE_URL is set explicitly in the project
+// settings. Elsewhere VITE_SITE_URL / .env is used as before.
+const vercelOrigin = process.env.VERCEL
+  ? process.env.VERCEL_ENV === "production" && process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : undefined
+  : undefined;
+const siteUrl = process.env.VITE_SITE_URL || vercelOrigin;
+
 export default defineConfig({
+  define: siteUrl ? { "import.meta.env.VITE_SITE_URL": JSON.stringify(siteUrl) } : undefined,
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

@@ -32,6 +32,11 @@ async function localMedia(file, id) {
   return { id, url: `/images/${file}`, alternativeText: null };
 }
 
+async function localGallery(files = [], baseId) {
+  const items = await Promise.all(files.map((file, i) => localMedia(file, baseId + i)));
+  return items.filter(Boolean);
+}
+
 async function fromSeed() {
   const seed = JSON.parse(await readFile(path.join(root, "cms/scripts/seed-data.json"), "utf8"));
   const withIds = (list, prefix) => list.map((it, i) => ({ id: i + 1, documentId: `${prefix}-${it.slug ?? i + 1}`, ...it }));
@@ -40,17 +45,18 @@ async function fromSeed() {
 
   const projects = [];
   for (const [i, p] of withIds(seed.projects, "project").entries()) {
-    const { heroImagePlaceholder, ...rest } = p;
-    projects.push({ ...rest, heroImage: await localMedia(heroImagePlaceholder, 100 + i), gallery: [] });
+    const { heroImagePlaceholder, galleryPlaceholders, ...rest } = p;
+    projects.push({ ...rest, heroImage: await localMedia(heroImagePlaceholder, 100 + i), gallery: await localGallery(galleryPlaceholders, 500 + i * 10) });
   }
 
   const properties = [];
   for (const [i, p] of withIds(seed.properties, "property").entries()) {
-    const { imagePlaceholder, projectSlug, ...rest } = p;
+    const { imagePlaceholder, galleryPlaceholders, projectSlug, ...rest } = p;
     const proj = projects.find((x) => x.slug === projectSlug);
     properties.push({
       ...rest,
       image: await localMedia(imagePlaceholder, 200 + i),
+      gallery: await localGallery(galleryPlaceholders, 600 + i * 10),
       project: proj ? { id: proj.id, documentId: proj.documentId, name: proj.name, slug: proj.slug } : null,
     });
   }

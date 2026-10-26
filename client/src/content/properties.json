@@ -14,7 +14,12 @@
       "Growth corridor"
     ],
     "availabilityStatus": "Available",
-    "image": null,
+    "image": {
+      "id": 200,
+      "url": "/images/properties/land-opportunities.webp",
+      "alternativeText": null
+    },
+    "gallery": [],
     "project": null
   },
   {
@@ -32,7 +37,18 @@
       "Community"
     ],
     "availabilityStatus": "Available",
-    "image": null,
+    "image": {
+      "id": 201,
+      "url": "/images/properties/residential-opportunities.webp",
+      "alternativeText": null
+    },
+    "gallery": [
+      {
+        "id": 610,
+        "url": "/images/properties/residential-opportunities-2.webp",
+        "alternativeText": null
+      }
+    ],
     "project": {
       "id": 1,
       "documentId": "project-signature-estate",
@@ -55,7 +71,12 @@
       "Long-term value"
     ],
     "availabilityStatus": "Available",
-    "image": null,
+    "image": {
+      "id": 202,
+      "url": "/images/properties/commercial-opportunities.webp",
+      "alternativeText": null
+    },
+    "gallery": [],
     "project": null
   },
   {
@@ -73,7 +94,12 @@
       "Long-term value"
     ],
     "availabilityStatus": "Available",
-    "image": null,
+    "image": {
+      "id": 203,
+      "url": "/images/properties/investment-conversations.webp",
+      "alternativeText": null
+    },
+    "gallery": [],
     "project": null
   }
 ]
