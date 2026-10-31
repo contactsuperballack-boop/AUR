@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 import { ArrowLink } from "@/components/page/ArrowLink";
-import { BrochureCta } from "@/components/page/BrochureCta";
+import { DownloadsCta } from "@/components/page/Downloads";
 import { FeaturedProjects } from "@/components/page/FeaturedProjects";
 import { AmbientFilm } from "@/components/page/ProjectFilm";
 import { homeFilm } from "@/data/project-media";
@@ -105,7 +105,7 @@ export function Home() {
           <p className="eyebrow inline-flex items-center gap-2 text-limestone/70"><RiseMark />Property, place, possibility</p>
           <h1 className="hero-title">Creating opportunities.<br /><em>Building lasting value.</em></h1>
           <p className="hero-copy">AJIYA Urban Rise is shaping a more considered future for property and urban growth in Nigeria — one conversation, one place, one lasting opportunity at a time.</p>
-          <div className="mt-8 flex flex-wrap gap-3"><Link href="/projects" className="button button--cream">Explore our projects <ArrowUpRight size={16} /></Link><Link href="/contact" className="button button--ghost-light">Talk to an expert <ArrowRight size={16} /></Link></div><BrochureCta />
+          <div className="mt-8 flex flex-wrap gap-3"><Link href="/projects" className="button button--cream">Explore our projects <ArrowUpRight size={16} /></Link><Link href="/contact" className="button button--ghost-light">Talk to an expert <ArrowRight size={16} /></Link></div><DownloadsCta />
         </div>
         <div className="mt-16 flex items-end justify-between border-t border-limestone/25 pt-5 text-[0.66rem] uppercase tracking-[0.2em] text-limestone/55"><span>Abuja · Nigeria</span><a href="#about" className="inline-flex items-center gap-2 transition-colors hover:text-limestone">Scroll to explore <ArrowDown size={14} /></a><span className="hidden sm:inline">Est. for what’s next</span></div>
       </div>
@@ -127,7 +127,7 @@ export function Home() {
       <div className="container"><div className="flex flex-col justify-between gap-8 md:flex-row md:items-end"><SectionHeading light eyebrow="Selected developments" title="Places with a point of view." copy="Explore the developments that express AJIYA’s belief in opportunity, community, and the future of Abuja." /><ArrowLink href="/projects" light>View all projects</ArrowLink></div><FeaturedProjects /></div>
     </section>
 
-    <section className="section-pad film-band bg-canopy text-limestone"><div className="container grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-center lg:gap-20"><div><SectionHeading light eyebrow="Urban Rise Estate" title="See the estate in motion." copy="A walk along the streets and through the homes of Urban Rise Estate in Kuje, Abuja." /><ArrowLink href={`/projects/${homeFilm.slug}`} light>Explore the estate</ArrowLink></div><AmbientFilm video={homeFilm.video} /></div></section>
+    <section className="section-pad film-band bg-canopy text-limestone"><div className="container grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-center lg:gap-20"><div><SectionHeading light eyebrow="Urban Rise Estate" title="See the estate in 3D." copy="A 3D walk along the streets and through the homes of Urban Rise Estate in Kuje, Abuja." /><ArrowLink href={`/projects/${homeFilm.slug}`} light>Explore the estate</ArrowLink></div><AmbientFilm video={homeFilm.video} /></div></section>
 
     <section className="section-pad bg-limestone overflow-hidden"><div className="container grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-24"><div className="lg:pt-12"><SectionHeading eyebrow="A view of urban growth" title="The future is not a skyline. It is a place people can belong to." copy="We see real estate as more than an asset class. It is opportunity, security, growth, community, and a foundation for legacy." /><div className="mt-10 grid grid-cols-2 gap-px bg-charcoal/10 border border-charcoal/10">{["Opportunity", "Security", "Growth", "Community"].map((item, i) => <div key={item} className="bg-limestone px-4 py-5 sm:px-6"><span className="eyebrow text-charcoal/40">0{i + 1}</span><p className="mt-3 font-display text-xl">{item}</p></div>)}</div></div><div className="urban-quote" ref={quoteSectionRef}><span className="urban-quote-mark" ref={quoteMarkRef}>“</span><p ref={quoteTextRef}>When the place is right, the next chapter feels possible.</p><span className="urban-quote-line" ref={quoteLineRef} /></div></div></section>
 

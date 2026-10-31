@@ -46,3 +46,8 @@ First step on your machine: `pnpm install && pnpm check && pnpm test && pnpm bui
 - **Land opportunities** uses a crop of open ground from the Urban Rise aerial render with a "Land for sale" sign added. Replace `images/properties/land-opportunities.webp` with a real photograph when you have one.
 - **Films:** `client/public/videos` + `data/project-media.ts`. Urban Rise Estate has three films; the Golden Valley reel is on the Golden Valley page. Hosting note: the static host must allow `media-src 'self'` in its Content-Security-Policy.
 - **Footer** Visit block now shows address and office hours side by side.
+
+## Batch 3d additions
+- **Downloads:** the old website brochure is removed. `client/public/downloads/` now holds `ajiya-brochure.pdf` and `ajiya-property-catalogue.pdf` (covers in `images/downloads/`, metadata in `downloads` in `data/site.ts`). Download pills appear on Home and About; a cover-card section sits at the bottom of Properties.
+- **Urban Rise Estate in 3D:** the project film section is retitled and the three walkthroughs sit in a horizontal, swipeable rail (`ProjectFilm`). Heading overrides live in `filmHeadings` in `data/project-media.ts`.
+- **Content to resolve before publishing the PDFs:** they still contain "[to confirm]" placeholders and "Refer & Earn 5% [terms to confirm]", and they describe Golden Valley and Khadija Residence as land plots while this site (and the Golden Valley reel) describe homes at the same sizes and prices.

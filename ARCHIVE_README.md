@@ -12,7 +12,7 @@ From the `ajiya-urban-rise/` directory, run `pnpm install` and then `pnpm dev`. 
 
 ## Assets and content
 
-The `assets/` directory contains the available local visual sources, including `ajiya-logo-original.JPG`, `ajiya-logo-transparent.png`, `ajiya-hero-reference.jpg`, and the downloadable `ajiya-urban-rise-brochure.pdf`. `brochure-source/` contains the Typst source and build manifest used to create the brochure. `project-reference/` contains the shared AJIYA briefs and specification documents.
+The `assets/` directory contains the available local visual sources, including `ajiya-logo-original.JPG`, `ajiya-logo-transparent.png`, `ajiya-hero-reference.jpg`, and the downloadable `downloads/ajiya-brochure.pdf and downloads/ajiya-property-catalogue.pdf`. `brochure-source/` contains the Typst source and build manifest used to create the brochure. `project-reference/` contains the shared AJIYA briefs and specification documents.
 
 The frontend references managed web asset paths for deployed media and uses editorial image URLs for current fallback imagery. Replace these with approved AJIYA project photography and final project facts as they become available. The newsletter and contact flows are frontend confirmation states only; connect them to an approved email platform, inbox, CRM, or backend before production lead capture.
 

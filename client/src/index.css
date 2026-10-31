@@ -818,3 +818,45 @@ button.whatsapp-fab { font: inherit; text-align: left; cursor: pointer; }
 .ambient-film video { display: block; width: 100%; height: 100%; object-fit: cover; }
 .ambient-film-toggle { position: absolute; right: 1rem; bottom: 1rem; display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid color-mix(in srgb, var(--limestone) 45%, transparent); background: color-mix(in srgb, var(--charcoal) 60%, transparent); color: var(--limestone); cursor: pointer; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: background-color 200ms var(--ease-out); }
 .ambient-film-toggle:hover { background: var(--canopy); }
+
+/* ==========================================================================
+   Batch 3d — downloads + horizontal film rail
+   ========================================================================== */
+.downloads-cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.15rem; }
+.downloads-cta .brochure-cta { margin-top: 0; }
+.downloads-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2.5vw, 2rem); margin-top: 3rem; }
+.download-card { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 1.5rem; align-items: center; padding: 1.25rem; border: 1px solid var(--line); background: var(--stone); color: var(--charcoal); transition: transform 500ms var(--ease-out), box-shadow 500ms var(--ease-out), border-color 300ms var(--ease-out); }
+.download-card:hover { transform: translateY(-2px); border-color: var(--canopy); box-shadow: 0 24px 50px -34px color-mix(in srgb, var(--charcoal) 55%, transparent); }
+.download-cover { display: block; overflow: hidden; background: var(--canopy); box-shadow: 0 18px 40px -26px rgba(14, 22, 19, 0.7); }
+.download-cover img { display: block; width: 100%; height: auto; }
+.download-body { display: grid; gap: 0.55rem; align-content: center; }
+.download-body .eyebrow { color: var(--canopy); text-transform: uppercase; }
+.download-body strong { font-family: "DM Serif Display", serif; font-size: clamp(1.5rem, 2.2vw, 1.9rem); font-weight: 400; line-height: 1.05; }
+.download-blurb { color: color-mix(in srgb, var(--charcoal) 72%, transparent); font-size: 0.9rem; line-height: 1.55; }
+.download-meta { color: color-mix(in srgb, var(--charcoal) 66%, transparent); font-size: 0.76rem; letter-spacing: 0.04em; }
+.download-action { display: inline-flex; align-items: center; gap: 0.45rem; margin-top: 0.4rem; color: var(--canopy); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+@media (max-width: 900px) { .downloads-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .download-card { grid-template-columns: 1fr; } .download-cover { max-width: 220px; } }
+
+.film-rail-wrap { margin-top: 2.5rem; }
+.film-rail { display: flex; gap: 1rem; padding: 0 max(1.3rem, calc((100vw - 1280px) / 2 + 1.3rem)) 0.75rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: max(1.3rem, calc((100vw - 1280px) / 2 + 1.3rem)); overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--bronze) transparent; }
+.film-slide { flex: 0 0 min(86vw, 780px); margin: 0; scroll-snap-align: start; }
+.film-slide .film-video { aspect-ratio: 16 / 9; max-height: 70vh; }
+.film-slide figcaption { margin-top: 0.7rem; color: color-mix(in srgb, var(--limestone) 72%, transparent); font-size: 0.78rem; letter-spacing: 0.04em; }
+.film-rail--portrait { justify-content: center; }
+.film-slide--portrait { flex-basis: min(78vw, 380px); }
+.film-slide--portrait .film-video { aspect-ratio: 9 / 16; max-height: 80vh; }
+.film-controls { display: flex; align-items: center; gap: 1rem; margin-top: 1.25rem; color: color-mix(in srgb, var(--limestone) 72%, transparent); font-size: 0.8rem; letter-spacing: 0.12em; }
+.film-arrow { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid color-mix(in srgb, var(--limestone) 38%, transparent); background: transparent; color: var(--limestone); cursor: pointer; transition: background-color 200ms var(--ease-out), border-color 200ms var(--ease-out); }
+.film-arrow:hover:not(:disabled) { border-color: var(--limestone); background: color-mix(in srgb, var(--limestone) 10%, transparent); }
+.film-arrow:disabled { opacity: 0.35; cursor: default; }
+.film-rail:focus-visible { outline-color: var(--limestone); outline-offset: -2px; }
+
+/* --- Team portraits: show the whole photo, matted (no zoom-in, nothing clipped) ---
+   The photos used to be scaled up ~14% by the parallax effect and shifted, which cut off the top
+   of heads. They now sit unscaled inside a ~6% stone mat with a hairline border (about 12% smaller
+   than the old full-bleed crop), so every portrait is visible in full. */
+.team-photo { aspect-ratio: auto; padding: 5%; background: var(--stone); border: 1px solid var(--line); }
+.team-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center; transform: none; }
+.team-initials { aspect-ratio: 4 / 5; height: auto; background: color-mix(in srgb, var(--canopy) 8%, var(--stone)); }
+.team-index { top: 0.75rem; left: 0.75rem; }

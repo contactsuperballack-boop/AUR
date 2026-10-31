@@ -25,5 +25,14 @@ export const projectVideos: Record<string, ProjectVideo[]> = {
   ],
 };
 
+/** Optional heading overrides for a project's film section (default: "In motion" / "<Name>, on film."). */
+export const filmHeadings: Record<string, { eyebrow: string; title: string; copy: string }> = {
+  "urban-rise-estate": {
+    eyebrow: "In 3D",
+    title: "Urban Rise Estate in 3D.",
+    copy: "Three 3D walkthroughs of the estate. Scroll sideways to move from the street to the homes.",
+  },
+};
+
 /** The film that plays quietly on the home page. */
 export const homeFilm = { slug: "urban-rise-estate", video: projectVideos["urban-rise-estate"][0] };

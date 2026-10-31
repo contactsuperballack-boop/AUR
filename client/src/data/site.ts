@@ -27,8 +27,35 @@ export const assets = {
   aboutInterior: "/images/about/estate-interior.webp",
   aboutStreet: "/images/about/estate-street.webp",
   instagram: "https://www.instagram.com/ajiyaurbanrise/",
-  brochure: "/ajiya-urban-rise-brochure.pdf",
 };
+
+/** Downloadable documents (client/public/downloads) with their cover thumbnails. */
+export const downloads = {
+  brochure: {
+    kind: "brochure",
+    title: "AJIYA Brochure",
+    href: "/downloads/ajiya-brochure.pdf",
+    filename: "ajiya-brochure.pdf",
+    cover: "/images/downloads/brochure-cover.webp",
+    coverWidth: 900,
+    coverHeight: 637,
+    pages: 7,
+    size: "1.6 MB",
+    blurb: "Who we are, our five capabilities, selected developments and how to reach the team.",
+  },
+  catalogue: {
+    kind: "catalogue",
+    title: "Property Catalogue",
+    href: "/downloads/ajiya-property-catalogue.pdf",
+    filename: "ajiya-property-catalogue.pdf",
+    cover: "/images/downloads/catalogue-cover.webp",
+    coverWidth: 637,
+    coverHeight: 900,
+    pages: 11,
+    size: "0.7 MB",
+    blurb: "Land, residential, commercial and investment opportunities, with unit types and indicative prices.",
+  },
+} as const;
 
 /** Where the booking assistant sends composed messages. Single source for WhatsApp/email targets. */
 export const contact = {
